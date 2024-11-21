@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing component with toggle</title>
+  </head>
+
+  <body>
+
+    <main class="min-h-screen font-monserrat bg-gradientStart/10">
+
+      <figure class="absolute inset-0 overflow-hidden pointer-events-none">
+        <img src="images/bg-top.svg" alt="" class="absolute max-w-xl md:top-0 -right-1/2 -top-20 md:right-0 -z-10">
+      </figure>
+
+      <figure class="absolute inset-0 hidden overflow-hidden pointer-events-none md:block ">
+        <img src="images/bg-bottom.svg" alt="" class="absolute bottom-0 left-0 hidden max-w-xl md:block -z-10">
+      </figure>
+
+      <h1 class="py-12 text-4xl text-center text-grayish-blue">Our Pricing</h1>
+
+      <div class="flex items-center justify-center space-x-8 text-light-grayish-blue">
+        
+        <p>Annually</p>
+
+        <div class="flex items-center justify-end rounded-full w-14 bg-gradient-to-r from-gradientStart to-gradientEnd hover:bg-gradientStart hover:transition-all hover:ease-in-out hover:cursor-pointer" id="toggle-container">
+          <div class="justify-end m-1 bg-white rounded-full size-6" id="toggle-button"></div>
+        </div>
+
+        <p>Monthly</p>
+
+      </div>
+
+      <div class="space-y-6 max-w-sm md:max-w-screen-lg mx-auto md:grid md:grid-cols-3 md:items-center md:space-y-0 w-[90%] md:w-full lg:w-[90%] text-center py-16">
+
+
+        <section class="py-5 space-y-5 shadow-2xl rounded-xl h-[90%] bg-white"> 
+
+          <h2 class="text-grayish-blue">Basic</h2>
+  
+          <p class="flex items-center justify-center text-5xl text-dark-grayish-blue price" ><span class="text-3xl">$</span>19.99</p>
+  
+          <ul class="border-y-2 space-y-5 py-5 w-[90%] mx-auto text-grayish-blue">
+  
+            <li>500 GB Storage</li>
+            <li class="py-5 border-y-2">2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+  
+          </ul> 
+  
+          <div class="flex items-center justify-center">
+            <a href="#"
+               class="w-[90%] py-3 rounded-md text-white uppercase bg-gradient-to-r from-gradientStart to-gradientEnd my-4 hover:text-gradientEnd hover:bg-none hover:border hover:border-gradientEnd transition-all ease-in duration-100">
+              Learn more
+            </a>
+          </div>         
+          
+  
+        </section>
+  
+        <section class="h-full py-5 space-y-5 text-white shadow-2xl rounded-xl md:py-12 bg-gradient-to-br from-gradientStart to-gradientEnd"> 
+  
+          <h2 >Professional</h2>
+  
+          <p class="flex items-center justify-center text-5xl price" ><span class="text-3xl">$</span>24.99</p>
+  
+          <ul class="border-y-2 space-y-5 py-5 w-[90%] mx-auto">
+  
+            <li>1 TB Storage</li>
+            <li class="py-5 border-y-2">5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+  
+          </ul> 
+  
+          <div class="flex items-center justify-center">
+            <a href="#" class="w-[90%] py-3 rounded-md text-gradientEnd uppercase bg-white my-4 hover:text-white hover:bg-transparent hover:border transition-all ease-in duration-100">
+              Learn more
+            </a>
+          </div>
+  
+        </section>
+  
+        <section class="py-5 space-y-5 shadow-2xl rounded-xl h-[90%] z-40 bg-white"> 
+  
+          <h2 class="text-grayish-blue">Master</h2>
+  
+          <p class="flex items-center justify-center text-5xl text-dark-grayish-blue price"><span class="text-3xl">$</span>39.99</p>
+  
+          <ul class="border-y-2 space-y-5 py-5 w-[90%] mx-auto text-grayish-blue">
+  
+            <li>2 TB Storage</li>
+            <li class="py-5 border-y-2">10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+  
+          </ul> 
+  
+          <div class="flex items-center justify-center">
+            <a href="#"
+               class="w-[90%] py-3 rounded-md text-white uppercase bg-gradient-to-r from-gradientStart to-gradientEnd my-4 hover:text-gradientEnd hover:bg-none hover:border hover:border-gradientEnd transition-all ease-in duration-100">
+              Learn more
+            </a>
+          </div>
+  
+        </section>
+
+      </div>
+
+    </main>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
